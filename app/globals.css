@@ -95,8 +95,8 @@ body {
 /* ─── Sections ───────────────────────────────────── */
 .work-section    { padding: 96px 48px; }
 .page-section    { padding: 80px 48px; max-width: 900px; }
-.page-section-sm { padding: 0 48px; max-width: 900px; margin-bottom: 96px; }
-.case-hero       { padding: 80px 48px; max-width: 900px; }
+.page-section-sm { padding: 0 48px; max-width: 900px; margin: 0 auto 96px; text-align: center; }
+.case-hero       { padding: 80px 48px; max-width: 900px; margin: 0 auto; text-align: center; }
 .divider         { border-top: 1px solid #D5D3D0; margin: 0 48px; }
 
 /* ─── About page ─────────────────────────────────── */
@@ -209,7 +209,7 @@ body {
 }
 
 /* ─── Next Up (case study) ───────────────────────── */
-.next-up-section { padding: 0 48px 96px; }
+.next-up-section { padding: 0 48px 96px; max-width: 900px; margin: 0 auto; }
 
 /* ══════════════════════════════════════════════════
    MOBILE  (≤ 768px)

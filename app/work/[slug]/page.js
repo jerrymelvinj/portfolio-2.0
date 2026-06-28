@@ -22,7 +22,7 @@ export default async function CaseStudy({ params }) {
       <Navbar />
 
       {/* Back */}
-      <div style={{ padding: '24px 48px 0' }}>
+      <div style={{ padding: '24px 48px 0', maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
         <Link href="/" style={{ fontSize: '14px', color: '#666666', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
           ← Back
         </Link>
@@ -34,10 +34,10 @@ export default async function CaseStudy({ params }) {
           {project.category}
         </p>
         <h1 className="case-h1">{project.title}</h1>
-        <p style={{ fontSize: '20px', color: '#666666', marginBottom: '64px', maxWidth: '600px' }}>
+        <p style={{ fontSize: '20px', color: '#666666', marginBottom: '64px', maxWidth: '600px', margin: '0 auto 64px', textAlign: 'center' }}>
           {project.description}
         </p>
-        <div style={{ display: 'flex', gap: '48px', borderTop: '1px solid #E7E7E7', paddingTop: '32px', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: '48px', borderTop: '1px solid #E7E7E7', paddingTop: '32px', flexWrap: 'wrap', justifyContent: 'center' }}>
           <div>
             <p style={{ fontSize: '12px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Role</p>
             <p style={{ fontSize: '16px', color: '#111111' }}>{project.role}</p>
@@ -58,7 +58,7 @@ export default async function CaseStudy({ params }) {
       <section className="page-section-sm">
         <p style={{ fontSize: '12px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px' }}>01 — Problem</p>
         <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#111111', marginBottom: '24px' }}>What were we solving?</h2>
-        <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '680px' }}>
+        <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
           Placeholder — describe the core problem this project addressed. What was broken, missing, or painful for users? What was the business context?
         </p>
       </section>
@@ -67,7 +67,7 @@ export default async function CaseStudy({ params }) {
       <section className="page-section-sm">
         <p style={{ fontSize: '12px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px' }}>02 — Research</p>
         <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#111111', marginBottom: '24px' }}>Understanding the user</h2>
-        <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '680px' }}>
+        <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
           Placeholder — what methods did you use? Interviews, surveys, competitive analysis? What were the key insights that shaped your design decisions?
         </p>
       </section>
@@ -81,7 +81,7 @@ export default async function CaseStudy({ params }) {
       <section className="page-section-sm">
         <p style={{ fontSize: '12px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px' }}>03 — Design Process</p>
         <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#111111', marginBottom: '24px' }}>From ideas to decisions</h2>
-        <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '680px' }}>
+        <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
           Placeholder — walk through your design thinking. User flows, information architecture, wireframes, and the key tradeoffs you made along the way.
         </p>
       </section>
@@ -90,7 +90,7 @@ export default async function CaseStudy({ params }) {
       <section className="page-section-sm">
         <p style={{ fontSize: '12px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px' }}>04 — Final Design</p>
         <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#111111', marginBottom: '24px' }}>The outcome</h2>
-        <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '680px' }}>
+        <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
           Placeholder — show and describe the final screens. What decisions are visible in the UI? What micro-interactions or systems thinking is embedded here?
         </p>
       </section>
@@ -107,7 +107,7 @@ export default async function CaseStudy({ params }) {
       <section className="page-section-sm">
         <p style={{ fontSize: '12px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px' }}>05 — Reflection</p>
         <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#111111', marginBottom: '24px' }}>What I learned</h2>
-        <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '680px' }}>
+        <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
           Placeholder — what would you do differently? What did this project teach you about design, users, or collaboration? What are the next steps?
         </p>
       </section>
