@@ -46,10 +46,10 @@ export default function About() {
                 Someone who feels first, then designs.
               </h1>
               <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.8', marginBottom: '20px' }}>
-                I'm Jerry Melvin. A product designer and frontend developer based in Bengaluru. I don't always know where a design is going when I start — but somewhere in the middle, it finds its shape. That's the part I live for.
+                I'm Jerry Melvin. A product designer and frontend developer based in Bengaluru. I don't always know where a design is going when I start, but somewhere in the middle, it finds its shape. That's the part I live for.
               </p>
               <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.8', marginBottom: '20px' }}>
-                I got into UI/UX quietly, without a grand plan. Learned design systems first — the boring but necessary kind — then slowly started understanding when to break them. Over time, I found myself designing and building together, not separately. One fed the other.
+                I got into UI/UX quietly, without a grand plan. Learned design systems first, the boring but necessary kind, then slowly started understanding when to break them. Over time, I found myself designing and building together, not separately. One fed the other.
               </p>
             </div>
 
@@ -62,10 +62,6 @@ export default function About() {
               <div className="about-info-row">
                 <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Based in</p>
                 <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>Bengaluru, India</p>
-              </div>
-              <div className="about-info-row">
-                <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Status</p>
-                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>Open to work</p>
               </div>
               <div className="about-info-row">
                 <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Since</p>
@@ -125,13 +121,13 @@ export default function About() {
               </p>
               <div style={{ flex: 1 }}>
                 <p style={{ fontSize: '22px', fontWeight: '500', color: '#111111', marginBottom: '10px', lineHeight: '1.2' }}>
-                  ReflexityAI
+                  OMRON
                 </p>
                 <p style={{ fontSize: '14px', color: '#666666', lineHeight: '1.7', marginBottom: '24px' }}>
-                  An AI-powered platform that automates and personalises client communication — built from the ground up as designer and developer.
+                  An AI-powered p latform that automates and personalises client communication, built from the ground up as designer and developer.
                 </p>
                 <p style={{ fontSize: '12px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-                  Product Design · AI · 2026
+                  Product Design · 2026
                 </p>
               </div>
               <div style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid #D5D3D0' }}>
@@ -157,7 +153,7 @@ export default function About() {
               If something here felt familiar, let's talk.
             </h2>
             <p style={{ fontSize: '16px', color: '#666666', marginBottom: '32px' }}>
-              Freelance, full-time, or just a conversation that goes somewhere — I'm around.
+              Freelance, full-time, or just a conversation that goes somewhere: I'm around.
             </p>
             <a href="https://wa.me/8248604075" style={{
               padding: '14px 40px',
