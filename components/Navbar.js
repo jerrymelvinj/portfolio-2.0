@@ -10,15 +10,15 @@ export default function Navbar() {
   return (
     <div className="nav-wrap">
       <nav className="nav-inner">
-        <Link href="/" style={{ textDecoration: 'none', color: '#111111', fontWeight: '600', fontSize: '15px' }}>
+        <Link href="/" className="btn" style={{ textDecoration: 'none', color: '#111111', fontWeight: '600', fontSize: '15px' }}>
           Jerry Melvin
         </Link>
 
         {/* Desktop links */}
         <div className="nav-links">
-          <Link href="/work" style={{ textDecoration: 'none', color: '#555555', fontSize: '14px' }}>Work</Link>
-          <Link href="/about" style={{ textDecoration: 'none', color: '#555555', fontSize: '14px' }}>About</Link>
-          <Link href="https://wa.me/8248604075" style={{
+          <Link href="/work" className="nav-link">Work</Link>
+          <Link href="/about" className="nav-link">About</Link>
+          <Link href="https://wa.me/8248604075" className="btn btn-blue" style={{
             textDecoration: 'none',
             color: '#FFFFFF',
             backgroundColor: '#4361EE',
@@ -42,9 +42,9 @@ export default function Navbar() {
         <button className="nav-overlay-close" onClick={() => setOpen(false)} aria-label="Close menu">
           <X size={28} />
         </button>
-        <Link href="/work" onClick={() => setOpen(false)}>Work</Link>
-        <Link href="/about" onClick={() => setOpen(false)}>About</Link>
-        <Link href="https://wa.me/8248604075" onClick={() => setOpen(false)} style={{
+        <Link href="/work" className="nav-link" onClick={() => setOpen(false)}>Work</Link>
+        <Link href="/about" className="nav-link" onClick={() => setOpen(false)}>About</Link>
+        <Link href="https://wa.me/8248604075" onClick={() => setOpen(false)} className="btn btn-blue" style={{
           fontSize: '18px',
           fontWeight: '600',
           color: '#FFFFFF',

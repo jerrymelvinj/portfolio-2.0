@@ -1,4 +1,5 @@
 import { Plus_Jakarta_Sans } from 'next/font/google'
+import WhatsAppFAB from '../components/WhatsAppFAB'
 import './globals.css'
 
 const jakarta = Plus_Jakarta_Sans({
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={jakarta.className}>
         {children}
+        <WhatsAppFAB />
       </body>
     </html>
   )

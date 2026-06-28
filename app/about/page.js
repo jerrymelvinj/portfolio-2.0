@@ -131,7 +131,7 @@ export default function About() {
                 </p>
               </div>
               <div style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid #E8E8E8' }}>
-                <a href="/work/omron" style={{
+                <a href="/work/omron" className="text-link" style={{
                   fontSize: '13px',
                   color: '#4361EE',
                   fontWeight: '600',
@@ -155,7 +155,7 @@ export default function About() {
             <p style={{ fontSize: '16px', color: '#666666', marginBottom: '32px' }}>
               Freelance, full-time, or just a conversation that goes somewhere: I'm around.
             </p>
-            <a href="https://wa.me/8248604075" style={{
+            <a href="https://wa.me/8248604075" className="btn btn-blue" style={{
               padding: '14px 40px',
               backgroundColor: '#4361EE',
               color: '#FFFFFF',

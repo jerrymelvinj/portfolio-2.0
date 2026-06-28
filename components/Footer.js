@@ -5,10 +5,10 @@ export default function Footer() {
         © 2026 Jerry Melvin
       </p>
       <div style={{ display: 'flex', gap: '24px' }}>
-        <a href="https://linkedin.com/in/jerrymelvinjm" target="_blank" style={{ fontSize: '14px', color: '#999999', textDecoration: 'none' }}>
+        <a href="https://linkedin.com/in/jerrymelvinjm" target="_blank" className="footer-link">
           LinkedIn
         </a>
-        <a href="https://instagram.com/jerrymelvinjm" target="_blank" style={{ fontSize: '14px', color: '#999999', textDecoration: 'none' }}>
+        <a href="https://instagram.com/jerrymelvinjm" target="_blank" className="footer-link">
           Instagram
         </a>
       </div>

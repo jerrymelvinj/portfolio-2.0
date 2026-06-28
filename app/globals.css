@@ -235,6 +235,72 @@ body {
 .case-h1  { font-size: 56px; font-weight: 700; color: #111111; margin-bottom: 24px; line-height: 1.08; letter-spacing: -0.02em; }
 .work-h1  { font-size: 48px; font-weight: 700; color: #111111; line-height: 1.1; max-width: 600px; margin: 0 auto 80px; text-align: center; letter-spacing: -0.02em; }
 
+/* ─── Buttons & interactive links ────────────────── */
+.nav-link {
+  text-decoration: none;
+  color: #555555;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+.nav-link:hover { color: #4361EE; }
+
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  cursor: pointer;
+}
+.btn:hover { transform: translateY(-2px); }
+
+.btn-blue:hover {
+  box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+  filter: brightness(1.1);
+}
+.btn-white:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+  filter: brightness(0.96);
+}
+.btn-dark:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.35);
+}
+.btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #999999;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+.footer-link:hover { color: #111111; }
+
+.text-link {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+.text-link:hover { opacity: 0.7; }
+
+/* ─── WhatsApp FAB ───────────────────────────────── */
+.whatsapp-fab {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  z-index: 100;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+}
+.whatsapp-fab:hover {
+  transform: scale(1.12) translateY(-2px);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55);
+}
+
 /* ─── Footer ─────────────────────────────────────── */
 .footer-inner {
   padding: 48px;

@@ -28,7 +28,7 @@ export default function ContactCTA() {
         }}>
           Have a project in mind? Let's talk.
         </h2>
-        <a href="https://wa.me/8248604075" style={{
+        <a href="https://wa.me/8248604075" className="btn btn-dark" style={{
           display: 'inline-block',
           background: '#111111',
           color: '#FFFFFF',

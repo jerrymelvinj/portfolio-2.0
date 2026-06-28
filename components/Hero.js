@@ -18,7 +18,7 @@ export default function Hero() {
         <em className="hero-serif">scale</em>.
       </h1>
       <div className="hero-ctas">
-        <a href="#work" style={{
+        <a href="#work" className="btn btn-white" style={{
           padding: '14px 32px',
           backgroundColor: '#FFFFFF',
           color: '#4361EE',
@@ -29,7 +29,7 @@ export default function Hero() {
         }}>
           View Work
         </a>
-        <a href="/resume.pdf" target="_blank" style={{
+        <a href="/resume.pdf" target="_blank" className="btn btn-outline-white" style={{
           padding: '14px 32px',
           backgroundColor: 'transparent',
           color: '#FFFFFF',
