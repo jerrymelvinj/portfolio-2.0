@@ -59,7 +59,7 @@ export default async function CaseStudy({ params }) {
         <p style={{ fontSize: '12px', color: '#888888', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px' }}>01 — Problem</p>
         <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#EDEBE8', marginBottom: '24px' }}>What were we solving?</h2>
         <p style={{ fontSize: '18px', color: '#888888', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
-          Placeholder — describe the core problem this project addressed. What was broken, missing, or painful for users? What was the business context?
+          I didn't come into this project with a clean slate. The team had already done the UX study — competitor analysis, user personas, pain points, the whole map. My job was to take all of that and turn it into something real. Something people could actually use. Omron is a brand with real trust behind it. Decades of it. But the website? It felt like the brand hadn't quite caught up to itself yet.
         </p>
       </section>
 
@@ -68,12 +68,13 @@ export default async function CaseStudy({ params }) {
         <p style={{ fontSize: '12px', color: '#888888', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px' }}>02 — Research</p>
         <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#EDEBE8', marginBottom: '24px' }}>Understanding the user</h2>
         <p style={{ fontSize: '18px', color: '#888888', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
-          Placeholder — what methods did you use? Interviews, surveys, competitive analysis? What were the key insights that shaped your design decisions?
+          The audit was clear. Users were landing on a homepage with no direction. No guided path. No way to tell if a product was for a doctor or someone's dad at home. The product pages had the specs but lost the story. Checkout was longer than it needed to be, and if your payment failed — you were just… dropped back on the page. No help. No retry. Nothing. Five personas. Five different ways people were arriving and leaving without what they came for.
         </p>
       </section>
 
       {/* Process Image */}
       <section className="page-section-sm">
+        <img src="/omron-process.png" alt="Process Image" style={{ width: '100%', maxWidth: '900px', borderRadius: '8px' }} />
         <div style={{ width: '100%', height: '400px', backgroundColor: '#1C1C1C', borderRadius: '8px' }} />
       </section>
 
@@ -82,7 +83,7 @@ export default async function CaseStudy({ params }) {
         <p style={{ fontSize: '12px', color: '#888888', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px' }}>03 — Design Process</p>
         <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#EDEBE8', marginBottom: '24px' }}>From ideas to decisions</h2>
         <p style={{ fontSize: '18px', color: '#888888', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
-          Placeholder — walk through your design thinking. User flows, information architecture, wireframes, and the key tradeoffs you made along the way.
+          I designed the website end to end. The homepage, category pages, product detail pages, cart, checkout — all of it. Some screens I figured out myself. A few I worked through with my senior, back and forth, until it felt right. The look shifted. Cleaner. More considered. The kind of interface that doesn't make you think too hard, which is the whole point when someone's buying a blood pressure monitor for their mother. We separated the consumer path from the professional one. Made warranty visible where it mattered, not buried three clicks deep. Added comparison, delivery estimates, a smarter post-purchase flow.
         </p>
       </section>
 
@@ -91,7 +92,7 @@ export default async function CaseStudy({ params }) {
         <p style={{ fontSize: '12px', color: '#888888', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px' }}>04 — Final Design</p>
         <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#EDEBE8', marginBottom: '24px' }}>The outcome</h2>
         <p style={{ fontSize: '18px', color: '#888888', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
-          Placeholder — show and describe the final screens. What decisions are visible in the UI? What micro-interactions or systems thinking is embedded here?
+          I went into a lot of meetings I wasn't sure about. Briefings, reviews, revisions. Each one added a layer I wouldn't have thought of sitting alone. The research was already there — my job was to listen to it, and then make something that matched what the users needed without making them feel like they were being designed at.
         </p>
       </section>
 
@@ -108,7 +109,7 @@ export default async function CaseStudy({ params }) {
         <p style={{ fontSize: '12px', color: '#888888', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px' }}>05 — Reflection</p>
         <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#EDEBE8', marginBottom: '24px' }}>What I learned</h2>
         <p style={{ fontSize: '18px', color: '#888888', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
-          Placeholder — what would you do differently? What did this project teach you about design, users, or collaboration? What are the next steps?
+          The site is live. It works. And somewhere, someone's grandmother found the BP monitor she needed without calling her son for help. That's enough for me.
         </p>
       </section>
 
