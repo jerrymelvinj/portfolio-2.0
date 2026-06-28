@@ -6,6 +6,7 @@ export const projects = [
     description: 'An AI-powered platform designed to automate and personalise client communication.',
     role: 'Design',
     year: '2025',
+    media: { type: 'image', src: '/content/omron.jpg' },
     placeholderColor: '#1a1a2e',
     tags: ['Website', 'UI/UX', '2025'],
   },
