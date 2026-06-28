@@ -11,7 +11,7 @@ export default function Work() {
         <section className="work-section">
           <p style={{
             fontSize: '13px',
-            color: '#888888',
+            color: '#999999',
             letterSpacing: '0.12em',
             textTransform: 'uppercase',
             marginBottom: '16px',
