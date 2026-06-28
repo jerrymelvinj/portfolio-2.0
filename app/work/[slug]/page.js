@@ -49,69 +49,25 @@ export default async function CaseStudy({ params }) {
         </div>
       </section>
 
-      {/* Cover Image */}
+      {/* Cover placeholder */}
       <section className="page-section-sm">
         <div style={{ width: '100%', height: '560px', backgroundColor: '#F0F0EE', borderRadius: '8px' }} />
       </section>
 
-      {/* Problem */}
-      <section className="page-section-sm">
-        <p style={{ fontSize: '12px', color: '#4361EE', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px', fontWeight: '600' }}>01 — Problem</p>
-        <h2 style={{ fontSize: '36px', fontWeight: '700', color: '#111111', marginBottom: '24px', letterSpacing: '-0.01em' }}>What were we solving?</h2>
-        <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
-          I didn't come into this project with a clean slate. The team had already done the UX study — competitor analysis, user personas, pain points, the whole map. My job was to take all of that and turn it into something real. Something people could actually use. Omron is a brand with real trust behind it. Decades of it. But the website? It felt like the brand hadn't quite caught up to itself yet.
-        </p>
-      </section>
-
-      {/* Research */}
-      <section className="page-section-sm">
-        <p style={{ fontSize: '12px', color: '#4361EE', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px', fontWeight: '600' }}>02 — Research</p>
-        <h2 style={{ fontSize: '36px', fontWeight: '700', color: '#111111', marginBottom: '24px', letterSpacing: '-0.01em' }}>Understanding the user</h2>
-        <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
-          The audit was clear. Users were landing on a homepage with no direction. No guided path. No way to tell if a product was for a doctor or someone's dad at home. The product pages had the specs but lost the story. Checkout was longer than it needed to be, and if your payment failed — you were just… dropped back on the page. No help. No retry. Nothing. Five personas. Five different ways people were arriving and leaving without what they came for.
-        </p>
-      </section>
-
-      {/* Process Image */}
-      <section className="page-section-sm">
-        <img src="/omron-process.png" alt="Process Image" style={{ width: '100%', maxWidth: '900px', borderRadius: '8px' }} />
-        <div style={{ width: '100%', height: '400px', backgroundColor: '#F0F0EE', borderRadius: '8px' }} />
-      </section>
-
-      {/* Design Process */}
-      <section className="page-section-sm">
-        <p style={{ fontSize: '12px', color: '#4361EE', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px', fontWeight: '600' }}>03 — Design Process</p>
-        <h2 style={{ fontSize: '36px', fontWeight: '700', color: '#111111', marginBottom: '24px', letterSpacing: '-0.01em' }}>From ideas to decisions</h2>
-        <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
-          I designed the website end to end. The homepage, category pages, product detail pages, cart, checkout — all of it. Some screens I figured out myself. A few I worked through with my senior, back and forth, until it felt right. The look shifted. Cleaner. More considered. The kind of interface that doesn't make you think too hard, which is the whole point when someone's buying a blood pressure monitor for their mother. We separated the consumer path from the professional one. Made warranty visible where it mattered, not buried three clicks deep. Added comparison, delivery estimates, a smarter post-purchase flow.
-        </p>
-      </section>
-
-      {/* Final Design */}
-      <section className="page-section-sm">
-        <p style={{ fontSize: '12px', color: '#4361EE', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px', fontWeight: '600' }}>04 — Final Design</p>
-        <h2 style={{ fontSize: '36px', fontWeight: '700', color: '#111111', marginBottom: '24px', letterSpacing: '-0.01em' }}>The outcome</h2>
-        <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
-          I went into a lot of meetings I wasn't sure about. Briefings, reviews, revisions. Each one added a layer I wouldn't have thought of sitting alone. The research was already there — my job was to listen to it, and then make something that matched what the users needed without making them feel like they were being designed at.
-        </p>
-      </section>
-
-      {/* Final Screens */}
-      <section className="page-section-sm">
-        <div className="grid-2">
-          <div style={{ height: '480px', backgroundColor: '#F0F0EE', borderRadius: '8px' }} />
-          <div style={{ height: '480px', backgroundColor: '#F0F0EE', borderRadius: '8px' }} />
-        </div>
-      </section>
-
-      {/* Reflection */}
-      <section className="page-section-sm">
-        <p style={{ fontSize: '12px', color: '#4361EE', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px', fontWeight: '600' }}>05 — Reflection</p>
-        <h2 style={{ fontSize: '36px', fontWeight: '700', color: '#111111', marginBottom: '24px', letterSpacing: '-0.01em' }}>What I learned</h2>
-        <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
-          The site is live. It works. And somewhere, someone's grandmother found the BP monitor she needed without calling her son for help. That's enough for me.
-        </p>
-      </section>
+      {/* Dynamic sections — edit content in content/projects.js */}
+      {project.sections && project.sections.map((section, i) => (
+        <section key={i} className="page-section-sm">
+          <p style={{ fontSize: '12px', color: '#4361EE', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px', fontWeight: '600' }}>
+            {section.label}
+          </p>
+          <h2 style={{ fontSize: '36px', fontWeight: '700', color: '#111111', marginBottom: '24px', letterSpacing: '-0.01em' }}>
+            {section.heading}
+          </h2>
+          <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.7', maxWidth: '680px', margin: '0 auto' }}>
+            {section.body}
+          </p>
+        </section>
+      ))}
 
       {/* Next Up */}
       <section className="next-up-section">
