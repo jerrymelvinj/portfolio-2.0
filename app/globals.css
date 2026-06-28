@@ -91,9 +91,72 @@ body {
 .work-section    { padding: 96px 48px; }
 .page-section    { padding: 80px 48px; max-width: 900px; }
 .page-section-sm { padding: 0 48px; max-width: 900px; margin-bottom: 96px; }
-.about-hero      { padding: 120px 48px 80px; max-width: 900px; }
 .case-hero       { padding: 80px 48px; max-width: 900px; }
 .divider         { border-top: 1px solid #E7E7E7; margin: 0 48px; }
+
+/* ─── About page ─────────────────────────────────── */
+.about-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 100px 48px 0;
+}
+.about-eyebrow {
+  font-size: 13px;
+  color: #666666;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.about-section-label {
+  font-size: 12px;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E7E7E7;
+  margin-bottom: 0;
+}
+.about-meta-strip {
+  display: flex;
+  border: 1px solid #E7E7E7;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 72px;
+}
+.about-meta-item {
+  flex: 1;
+  padding: 20px 24px;
+  border-right: 1px solid #E7E7E7;
+}
+.about-meta-item:last-child { border-right: none; }
+.about-meta-label {
+  font-size: 11px;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+.about-meta-value {
+  font-size: 14px;
+  color: #111111;
+  font-weight: 500;
+}
+.about-skill-row {
+  display: grid;
+  grid-template-columns: 148px 1fr;
+  gap: 32px;
+  padding: 20px 0;
+  border-top: 1px solid #E7E7E7;
+  align-items: flex-start;
+}
+.about-exp-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 32px;
+  padding: 28px 0;
+  border-top: 1px solid #E7E7E7;
+  align-items: flex-start;
+}
 
 /* ─── Grids ──────────────────────────────────────── */
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
@@ -147,10 +210,17 @@ body {
   .work-section    { padding: 48px 20px; }
   .page-section    { padding: 48px 20px; }
   .page-section-sm { padding: 0 20px; margin-bottom: 56px; }
-  .about-hero      { padding: 72px 20px 40px; }
   .case-hero       { padding: 40px 20px; }
   .divider         { margin: 0 20px; }
   .next-up-section { padding: 0 20px 64px; }
+
+  /* About page */
+  .about-container  { padding: 64px 20px 0; }
+  .about-meta-strip { flex-direction: column; }
+  .about-meta-item  { border-right: none; border-bottom: 1px solid #E7E7E7; }
+  .about-meta-item:last-child { border-bottom: none; }
+  .about-skill-row  { grid-template-columns: 1fr; gap: 8px; }
+  .about-exp-row    { grid-template-columns: 1fr; gap: 6px; }
 
   /* Grids */
   .grid-2 { grid-template-columns: 1fr; }
