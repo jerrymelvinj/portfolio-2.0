@@ -12,19 +12,19 @@ const experience = [
     period: 'Jul 2024 – Present',
     role: 'Product Designer (UI/UX)',
     company: 'AKOI Marketing Hub Pvt. Ltd.',
-    description: 'Leading UI/UX for an internal SaaS reporting tool and high-conversion D2C landing pages. Established a scalable design system using Figma variables and components. Drove a 30% increase in marketplace sales through optimised layout and clear calls-to-action.',
+    description: 'Leading UI/UX for an internal SaaS reporting tool and D2C landing pages. Established a scalable design system and drove a 30% increase in marketplace sales.',
   },
   {
     period: 'Dec 2024 – Feb 2025',
     role: 'UI/UX Designer',
     company: 'Griticon Technologies Pvt. Ltd.',
-    description: 'Designed responsive, minimal-themed interfaces for mobile and tablet apps, adhering to iOS and Material Design guidelines. Created interactive prototypes to validate user flows before development.',
+    description: 'Designed responsive, minimal-themed interfaces for mobile and tablet apps following iOS and Material Design guidelines.',
   },
   {
     period: 'May 2024 – Jul 2024',
     role: 'Graphic Design Trainer',
     company: 'Academy of Media and Design',
-    description: "Mentored students on design principles and tools as part of the government's Kalike Jothege Kaushalya initiative. Translated complex design concepts into accessible lessons.",
+    description: "Mentored students on design principles as part of the government's Kalike Jothege Kaushalya initiative.",
   },
 ]
 
@@ -36,40 +36,53 @@ export default function About() {
 
         <div className="about-container">
 
-          {/* Hero */}
-          <div style={{ marginBottom: '56px' }}>
-            <p className="about-eyebrow">About</p>
-            <h1 className="about-h1">
-              Designer who thinks in<br />systems and feels in details.
-            </h1>
-            <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '540px' }}>
-              I'm Jerry Melvin — a product designer and frontend developer based in Bengaluru, working at the intersection of UX thinking, visual craft, and frontend code.
-            </p>
-          </div>
+          {/* Top: Bio + Info card */}
+          <div className="about-top-cols">
 
-          {/* Meta strip */}
-          <div className="about-meta-strip">
-            <div className="about-meta-item">
-              <p className="about-meta-label">Role</p>
-              <p className="about-meta-value">Product Designer</p>
+            {/* Left — bio */}
+            <div>
+              <p className="about-eyebrow">About me</p>
+              <h1 className="about-h1">
+                Designer who thinks in systems and feels in details.
+              </h1>
+              <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.8', marginBottom: '20px' }}>
+                I'm Jerry Melvin — a product designer and frontend developer based in Bengaluru. I work at the intersection of UX thinking, visual craft, and frontend code. I care about products that are both well-reasoned and well-felt.
+              </p>
+              <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.8', marginBottom: '20px' }}>
+                I started in UI/UX with a focus on design systems — learning how to build consistency at scale before learning how to break it intentionally. Over time I moved toward full-stack product work: designing, building, and shipping end-to-end.
+              </p>
+              <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.8' }}>
+                Outside of client work, I'm building ReflexityAI — an AI-powered platform for automating personalised client communication. It's where I test every idea I'm not yet ready to sell.
+              </p>
             </div>
-            <div className="about-meta-item">
-              <p className="about-meta-label">Location</p>
-              <p className="about-meta-value">Bengaluru, India</p>
+
+            {/* Right — info card */}
+            <div className="about-info-card">
+              <div className="about-info-row">
+                <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Role</p>
+                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>Product Designer</p>
+              </div>
+              <div className="about-info-row">
+                <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Based in</p>
+                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>Bengaluru, India</p>
+              </div>
+              <div className="about-info-row">
+                <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Status</p>
+                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>Open to work</p>
+              </div>
+              <div className="about-info-row">
+                <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Since</p>
+                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>2024</p>
+              </div>
+              <div className="about-info-row">
+                <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Currently building</p>
+                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>ReflexityAI</p>
+              </div>
             </div>
+
           </div>
 
-          {/* Bio */}
-          <div style={{ marginBottom: '80px' }}>
-            <p style={{ fontSize: '17px', color: '#444444', lineHeight: '1.85', maxWidth: '620px', marginBottom: '20px' }}>
-              I started in UI/UX with a focus on design systems — learning how to build consistency at scale before learning how to break it intentionally. Over time I moved toward full-stack product work: designing, building, and shipping end-to-end.
-            </p>
-            <p style={{ fontSize: '17px', color: '#444444', lineHeight: '1.85', maxWidth: '620px' }}>
-              Outside of client work, I'm building ReflexityAI — an AI-powered platform for automating personalised client communication. It's where I test every idea I'm not yet ready to sell.
-            </p>
-          </div>
-
-          {/* Skills */}
+          {/* Skills — tabular */}
           <div style={{ marginBottom: '80px' }}>
             <p className="about-section-label">Skills</p>
             {skills.map(s => (
@@ -82,31 +95,63 @@ export default function About() {
                 </p>
               </div>
             ))}
-            <div style={{ borderTop: '1px solid #E7E7E7' }} />
+            <div style={{ borderTop: '1px solid #D5D3D0' }} />
           </div>
 
-          {/* Experience */}
-          <div style={{ marginBottom: '80px' }}>
-            <p className="about-section-label">Experience</p>
-            {experience.map(job => (
-              <div key={job.role} className="about-exp-row">
-                <p style={{ fontSize: '13px', color: '#999999', lineHeight: '1.5', paddingTop: '2px' }}>
-                  {job.period}
-                </p>
-                <div>
-                  <p style={{ fontSize: '17px', fontWeight: '500', color: '#111111', marginBottom: '3px' }}>
+          {/* Bottom: Experience + Currently Building — two cards */}
+          <div className="about-bottom-cards">
+
+            {/* Experience card */}
+            <div className="about-card">
+              <p style={{ fontSize: '14px', fontWeight: '600', color: '#111111', letterSpacing: '0.01em', marginBottom: '20px' }}>
+                Experience
+              </p>
+              {experience.map(job => (
+                <div key={job.role} className="about-card-job">
+                  <p style={{ fontSize: '11px', color: '#999999', marginBottom: '4px', letterSpacing: '0.02em' }}>
+                    {job.period}
+                  </p>
+                  <p style={{ fontSize: '15px', fontWeight: '500', color: '#111111', marginBottom: '1px' }}>
                     {job.role}
                   </p>
-                  <p style={{ fontSize: '13px', color: '#AAAAAA', marginBottom: '14px', letterSpacing: '0.02em' }}>
+                  <p style={{ fontSize: '13px', color: '#AAAAAA' }}>
                     {job.company}
                   </p>
-                  <p style={{ fontSize: '15px', color: '#444444', lineHeight: '1.75' }}>
-                    {job.description}
-                  </p>
                 </div>
+              ))}
+            </div>
+
+            {/* Currently Building card */}
+            <div className="about-card" style={{ display: 'flex', flexDirection: 'column' }}>
+              <p style={{ fontSize: '14px', fontWeight: '600', color: '#111111', letterSpacing: '0.01em', marginBottom: '20px' }}>
+                Currently Building
+              </p>
+              <div style={{ flex: 1 }}>
+                <p style={{ fontSize: '22px', fontWeight: '500', color: '#111111', marginBottom: '10px', lineHeight: '1.2' }}>
+                  ReflexityAI
+                </p>
+                <p style={{ fontSize: '14px', color: '#666666', lineHeight: '1.7', marginBottom: '24px' }}>
+                  An AI-powered platform that automates and personalises client communication — built from the ground up as designer and developer.
+                </p>
+                <p style={{ fontSize: '12px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                  Product Design · AI · 2026
+                </p>
               </div>
-            ))}
-            <div style={{ borderTop: '1px solid #E7E7E7' }} />
+              <div style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid #D5D3D0' }}>
+                <a href="/work/reflexity-ai" style={{
+                  fontSize: '13px',
+                  color: '#111111',
+                  fontWeight: '500',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                }}>
+                  View case study →
+                </a>
+              </div>
+            </div>
+
           </div>
 
           {/* Contact CTA */}

@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #FAFAF8;
+  background-color: #EDEBE8;
   color: #111111;
   font-family: sans-serif;
 }
@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 24px 48px;
-  border-bottom: 1px solid #E7E7E7;
+  border-bottom: 1px solid #D5D3D0;
   position: relative;
   z-index: 10;
 }
@@ -37,7 +37,7 @@ body {
   display: none;
   position: fixed;
   inset: 0;
-  background: #FAFAF8;
+  background: #EDEBE8;
   z-index: 40;
   flex-direction: column;
   align-items: center;
@@ -72,7 +72,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 80px 48px;
-  background: radial-gradient(ellipse at 60% 40%, #e8e4f0 0%, #f5f3ee 40%, #FAFAF8 100%);
+  background: radial-gradient(ellipse at 60% 40%, #e2ddf0 0%, #ebe8e3 40%, #EDEBE8 100%);
 }
 .hero-h1 {
   font-size: 72px;
@@ -86,102 +86,122 @@ body {
   display: flex;
   gap: 16px;
 }
+.hero-serif {
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+}
 
 /* ─── Sections ───────────────────────────────────── */
 .work-section    { padding: 96px 48px; }
 .page-section    { padding: 80px 48px; max-width: 900px; }
 .page-section-sm { padding: 0 48px; max-width: 900px; margin-bottom: 96px; }
 .case-hero       { padding: 80px 48px; max-width: 900px; }
-.divider         { border-top: 1px solid #E7E7E7; margin: 0 48px; }
+.divider         { border-top: 1px solid #D5D3D0; margin: 0 48px; }
 
 /* ─── About page ─────────────────────────────────── */
 .about-container {
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 100px 48px 0;
+  padding: 80px 48px 0;
 }
 .about-eyebrow {
   font-size: 13px;
-  color: #666666;
+  color: #999999;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
 .about-section-label {
   font-size: 12px;
-  color: #666666;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #E7E7E7;
-  margin-bottom: 0;
-}
-.about-meta-strip {
-  display: flex;
-  border: 1px solid #E7E7E7;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 72px;
-}
-.about-meta-item {
-  flex: 1;
-  padding: 20px 24px;
-  border-right: 1px solid #E7E7E7;
-}
-.about-meta-item:last-child { border-right: none; }
-.about-meta-label {
-  font-size: 11px;
   color: #999999;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 6px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #D5D3D0;
+  margin-bottom: 0;
 }
-.about-meta-value {
-  font-size: 14px;
-  color: #111111;
-  font-weight: 500;
+.about-top-cols {
+  display: grid;
+  grid-template-columns: 1fr 268px;
+  gap: 40px;
+  margin-bottom: 72px;
+  align-items: flex-start;
+}
+.about-info-card {
+  background: #E3E1DE;
+  border-radius: 16px;
+  padding: 28px;
+  position: sticky;
+  top: 24px;
+}
+.about-info-row {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #D5D3D0;
+}
+.about-info-row:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
 }
 .about-skill-row {
   display: grid;
   grid-template-columns: 148px 1fr;
   gap: 32px;
   padding: 20px 0;
-  border-top: 1px solid #E7E7E7;
+  border-top: 1px solid #D5D3D0;
   align-items: flex-start;
 }
-.about-exp-row {
+.about-bottom-cards {
   display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 32px;
-  padding: 28px 0;
-  border-top: 1px solid #E7E7E7;
-  align-items: flex-start;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+.about-card {
+  background: #E3E1DE;
+  border-radius: 16px;
+  padding: 28px 28px 32px;
+}
+.about-card-job {
+  padding: 14px 0;
+  border-bottom: 1px solid #D5D3D0;
+}
+.about-card-job:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 /* ─── Grids ──────────────────────────────────────── */
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
-.exp-row { display: grid; grid-template-columns: 200px 1fr; gap: 32px; margin-bottom: 56px; }
 
 /* ─── Cards ──────────────────────────────────────── */
+.card-wrap {
+  background: #E3E1DE;
+  border-radius: 16px;
+  overflow: hidden;
+}
 .card-img {
   width: 100%;
   height: 360px;
-  border-radius: 12px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 20px;
+}
+.card-content {
+  padding: 16px 20px 20px;
 }
 
 /* ─── Typography ─────────────────────────────────── */
-.about-h1 { font-size: 56px; font-weight: 500; line-height: 1.15; color: #111111; max-width: 700px; margin-bottom: 32px; }
+.about-h1 { font-size: 52px; font-weight: 500; line-height: 1.15; color: #111111; margin-bottom: 28px; }
 .case-h1  { font-size: 56px; font-weight: 500; color: #111111; margin-bottom: 24px; line-height: 1.1; }
 .work-h1  { font-size: 48px; font-weight: 500; color: #111111; line-height: 1.15; max-width: 600px; margin-bottom: 80px; }
 
 /* ─── Footer ─────────────────────────────────────── */
 .footer-inner {
   padding: 48px;
-  border-top: 1px solid #E7E7E7;
+  background: #111111;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,17 +235,15 @@ body {
   .next-up-section { padding: 0 20px 64px; }
 
   /* About page */
-  .about-container  { padding: 64px 20px 0; }
-  .about-meta-strip { flex-direction: column; }
-  .about-meta-item  { border-right: none; border-bottom: 1px solid #E7E7E7; }
-  .about-meta-item:last-child { border-bottom: none; }
-  .about-skill-row  { grid-template-columns: 1fr; gap: 8px; }
-  .about-exp-row    { grid-template-columns: 1fr; gap: 6px; }
+  .about-container    { padding: 60px 20px 0; }
+  .about-top-cols     { grid-template-columns: 1fr; gap: 24px; }
+  .about-info-card    { position: static; }
+  .about-skill-row    { grid-template-columns: 1fr; gap: 8px; }
+  .about-bottom-cards { grid-template-columns: 1fr; }
 
   /* Grids */
   .grid-2 { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; gap: 32px; }
-  .exp-row { grid-template-columns: 1fr; gap: 6px; }
 
   /* Cards */
   .card-img { height: 220px; cursor: pointer; }

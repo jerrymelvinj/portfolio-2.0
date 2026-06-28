@@ -64,17 +64,19 @@ export default function ProjectCard({ project, index }) {
     >
       <Link href={`/work/${project.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
         <div
+          className="card-wrap"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           style={{ cursor: 'none' }}
         >
-          {/* Image */}
+          {/* Image area */}
           <div
             ref={imageRef}
             onMouseMove={handleMouseMove}
             className="card-img"
-            style={{ backgroundColor: project.placeholderColor || '#E7E7E7' }}
+            style={{ backgroundColor: project.placeholderColor || '#D8D6D3' }}
           >
+            {/* Placeholder label */}
             <div style={{
               position: 'absolute',
               inset: 0,
@@ -84,13 +86,41 @@ export default function ProjectCard({ project, index }) {
             }}>
               <span style={{
                 fontSize: '13px',
-                color: 'rgba(255,255,255,0.25)',
+                color: 'rgba(255,255,255,0.12)',
                 letterSpacing: '0.15em',
                 textTransform: 'uppercase',
               }}>
                 {project.title}
               </span>
             </div>
+
+            {/* Tag pills — bottom-left overlay */}
+            {project.tags && (
+              <div style={{
+                position: 'absolute',
+                bottom: '14px',
+                left: '14px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '6px',
+                zIndex: 2,
+              }}>
+                {project.tags.map(tag => (
+                  <span key={tag} style={{
+                    fontSize: '10px',
+                    background: 'rgba(17,17,17,0.72)',
+                    color: '#FFFFFF',
+                    borderRadius: '100px',
+                    padding: '4px 10px',
+                    letterSpacing: '0.06em',
+                    backdropFilter: 'blur(6px)',
+                    WebkitBackdropFilter: 'blur(6px)',
+                  }}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
 
             {/* Cursor badge */}
             <div style={{
@@ -119,55 +149,24 @@ export default function ProjectCard({ project, index }) {
             </div>
           </div>
 
-          {/* Text row */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr auto',
-            gap: '16px',
-            alignItems: 'flex-start',
-          }}>
-            <div>
-              <h2 style={{
-                fontSize: '20px',
-                fontWeight: '500',
-                color: '#111111',
-                marginBottom: '6px',
-                lineHeight: '1.2',
-              }}>
-                {project.title}
-              </h2>
-              <p style={{
-                fontSize: '14px',
-                color: '#666666',
-                lineHeight: '1.6',
-              }}>
-                {project.description}
-              </p>
-            </div>
-
-            {/* Tags */}
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '6px',
-              alignItems: 'flex-end',
-              flexShrink: 0,
+          {/* Card content */}
+          <div className="card-content">
+            <h2 style={{
+              fontSize: '18px',
+              fontWeight: '500',
+              color: '#111111',
+              marginBottom: '5px',
+              lineHeight: '1.3',
             }}>
-              {project.tags?.map(tag => (
-                <span key={tag} style={{
-                  fontSize: '10px',
-                  color: '#666666',
-                  border: '1px solid #D8D8D8',
-                  borderRadius: '100px',
-                  padding: '4px 10px',
-                  letterSpacing: '0.08em',
-                  textTransform: 'uppercase',
-                  whiteSpace: 'nowrap',
-                }}>
-                  {tag}
-                </span>
-              ))}
-            </div>
+              {project.title}
+            </h2>
+            <p style={{
+              fontSize: '13px',
+              color: '#888888',
+              lineHeight: '1.55',
+            }}>
+              {project.description}
+            </p>
           </div>
         </div>
       </Link>
