@@ -12,7 +12,7 @@ body {
 /* ─── Navbar ─────────────────────────────────────── */
 .nav-wrap {
   padding: 20px 24px 0;
-  background: #4361EE;
+  background: #2D52E8;
 }
 .nav-inner {
   display: flex;
@@ -77,7 +77,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 80px 48px 100px;
-  background: #4361EE;
+  background: linear-gradient(140deg, #2D52E8 0%, #4361EE 45%, #7B63F5 100%);
 }
 .hero-h1 {
   font-size: 72px;

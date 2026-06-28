@@ -24,10 +24,12 @@ export default function Work() {
           <h1 className="work-h1">
             Selected projects
           </h1>
-          <div className="grid-1">
-            {projects.map((project, index) => (
-              <ProjectCard key={project.slug} project={project} index={index} />
-            ))}
+          <div style={{ maxWidth: '760px', margin: '0 auto' }}>
+            <div className="grid-1">
+              {projects.map((project, index) => (
+                <ProjectCard key={project.slug} project={project} index={index} />
+              ))}
+            </div>
           </div>
         </section>
         <ContactCTA />
