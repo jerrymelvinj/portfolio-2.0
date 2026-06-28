@@ -27,6 +27,7 @@
  */
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useRef, useEffect } from 'react'
 
 export default function ProjectCard({ project, index }) {
@@ -76,23 +77,39 @@ export default function ProjectCard({ project, index }) {
             className="card-img"
             style={{ backgroundColor: project.placeholderColor || '#D8D6D3' }}
           >
-            {/* Placeholder label */}
-            <div style={{
-              position: 'absolute',
-              inset: 0,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
-              <span style={{
-                fontSize: '13px',
-                color: 'rgba(255,255,255,0.12)',
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
+            {/* Media */}
+            {project.media?.type === 'image' && (
+              <Image
+                src={project.media.src}
+                alt={project.title}
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            )}
+            {project.media?.type === 'video' && (
+              <video autoPlay muted loop playsInline style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}>
+                <source src={project.media.src} type="video/mp4" />
+              </video>
+            )}
+            {!project.media && (
+              <div style={{
+                position: 'absolute',
+                inset: 0,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
               }}>
-                {project.title}
-              </span>
-            </div>
+                <span style={{
+                  fontSize: '13px',
+                  color: 'rgba(255,255,255,0.12)',
+                  letterSpacing: '0.15em',
+                  textTransform: 'uppercase',
+                }}>
+                  {project.title}
+                </span>
+              </div>
+            )}
 
             {/* Tag pills — bottom-left overlay */}
             {project.tags && (
