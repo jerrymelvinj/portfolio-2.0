@@ -181,6 +181,8 @@ body {
 }
 
 /* ─── Grids ──────────────────────────────────────── */
+.grid-1 { display: flex; flex-direction: column; gap: 32px; }
+.grid-1 .card-img { height: 480px; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
 
@@ -297,11 +299,15 @@ body {
 
   /* Cards */
   .card-img { height: 220px; cursor: pointer; }
+  .grid-1 .card-img { height: 260px; }
 
   /* Typography */
   .about-h1 { font-size: 32px; }
   .case-h1  { font-size: 32px; }
   .work-h1  { font-size: 32px; margin-bottom: 40px; }
+
+  /* CTA */
+  .cta-section { padding: 0 20px 64px; }
 
   /* Footer */
   .footer-inner {
