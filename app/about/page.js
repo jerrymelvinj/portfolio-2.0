@@ -45,10 +45,10 @@ export default function About() {
               <h1 className="about-h1">
                 Someone who feels first, then designs.
               </h1>
-              <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.8', marginBottom: '20px' }}>
+              <p style={{ fontSize: '18px', color: '#888888', lineHeight: '1.8', marginBottom: '20px' }}>
                 I'm Jerry Melvin. A product designer and frontend developer based in Bengaluru. I don't always know where a design is going when I start, but somewhere in the middle, it finds its shape. That's the part I live for.
               </p>
-              <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.8', marginBottom: '20px' }}>
+              <p style={{ fontSize: '18px', color: '#888888', lineHeight: '1.8', marginBottom: '20px' }}>
                 I got into UI/UX quietly, without a grand plan. Learned design systems first, the boring but necessary kind, then slowly started understanding when to break them. Over time, I found myself designing and building together, not separately. One fed the other.
               </p>
             </div>
@@ -56,20 +56,20 @@ export default function About() {
             {/* Right — info card */}
             <div className="about-info-card">
               <div className="about-info-row">
-                <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Role</p>
-                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>Product Designer</p>
+                <p style={{ fontSize: '11px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Role</p>
+                <p style={{ fontSize: '15px', color: '#EDEBE8', fontWeight: '500' }}>Product Designer</p>
               </div>
               <div className="about-info-row">
-                <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Based in</p>
-                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>Bengaluru, India</p>
+                <p style={{ fontSize: '11px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Based in</p>
+                <p style={{ fontSize: '15px', color: '#EDEBE8', fontWeight: '500' }}>Bengaluru, India</p>
               </div>
               <div className="about-info-row">
-                <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Since</p>
-                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>2024</p>
+                <p style={{ fontSize: '11px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Since</p>
+                <p style={{ fontSize: '15px', color: '#EDEBE8', fontWeight: '500' }}>2024</p>
               </div>
               <div className="about-info-row">
-                <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Currently building</p>
-                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>-</p>
+                <p style={{ fontSize: '11px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Currently building</p>
+                <p style={{ fontSize: '15px', color: '#EDEBE8', fontWeight: '500' }}>-</p>
               </div>
             </div>
 
@@ -80,15 +80,15 @@ export default function About() {
             <p className="about-section-label">Skills</p>
             {skills.map(s => (
               <div key={s.category} className="about-skill-row">
-                <p style={{ fontSize: '12px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.08em', paddingTop: '2px' }}>
+                <p style={{ fontSize: '12px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.08em', paddingTop: '2px' }}>
                   {s.category}
                 </p>
-                <p style={{ fontSize: '15px', color: '#111111', lineHeight: '1.85' }}>
+                <p style={{ fontSize: '15px', color: '#EDEBE8', lineHeight: '1.85' }}>
                   {s.items.join(' · ')}
                 </p>
               </div>
             ))}
-            <div style={{ borderTop: '1px solid #D5D3D0' }} />
+            <div style={{ borderTop: '1px solid #2A2A2A' }} />
           </div>
 
           {/* Bottom: Experience + Currently Building — two cards */}
@@ -96,18 +96,18 @@ export default function About() {
 
             {/* Experience card */}
             <div className="about-card">
-              <p style={{ fontSize: '14px', fontWeight: '600', color: '#111111', letterSpacing: '0.01em', marginBottom: '20px' }}>
+              <p style={{ fontSize: '14px', fontWeight: '600', color: '#EDEBE8', letterSpacing: '0.01em', marginBottom: '20px' }}>
                 Experience
               </p>
               {experience.map(job => (
                 <div key={job.role} className="about-card-job">
-                  <p style={{ fontSize: '11px', color: '#999999', marginBottom: '4px', letterSpacing: '0.02em' }}>
+                  <p style={{ fontSize: '11px', color: '#666666', marginBottom: '4px', letterSpacing: '0.02em' }}>
                     {job.period}
                   </p>
-                  <p style={{ fontSize: '15px', fontWeight: '500', color: '#111111', marginBottom: '1px' }}>
+                  <p style={{ fontSize: '15px', fontWeight: '500', color: '#EDEBE8', marginBottom: '1px' }}>
                     {job.role}
                   </p>
-                  <p style={{ fontSize: '13px', color: '#AAAAAA' }}>
+                  <p style={{ fontSize: '13px', color: '#888888' }}>
                     {job.company}
                   </p>
                 </div>
@@ -116,24 +116,24 @@ export default function About() {
 
             {/* Currently Building card */}
             <div className="about-card" style={{ display: 'flex', flexDirection: 'column' }}>
-              <p style={{ fontSize: '14px', fontWeight: '600', color: '#111111', letterSpacing: '0.01em', marginBottom: '20px' }}>
+              <p style={{ fontSize: '14px', fontWeight: '600', color: '#EDEBE8', letterSpacing: '0.01em', marginBottom: '20px' }}>
                 Currently Building
               </p>
               <div style={{ flex: 1 }}>
-                <p style={{ fontSize: '22px', fontWeight: '500', color: '#111111', marginBottom: '10px', lineHeight: '1.2' }}>
+                <p style={{ fontSize: '22px', fontWeight: '500', color: '#EDEBE8', marginBottom: '10px', lineHeight: '1.2' }}>
                   OMRON
                 </p>
-                <p style={{ fontSize: '14px', color: '#666666', lineHeight: '1.7', marginBottom: '24px' }}>
-                  An AI-powered p latform that automates and personalises client communication, built from the ground up as designer and developer.
+                <p style={{ fontSize: '14px', color: '#888888', lineHeight: '1.7', marginBottom: '24px' }}>
+                  An AI-powered platform that automates and personalises client communication, built from the ground up as designer and developer.
                 </p>
-                <p style={{ fontSize: '12px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                <p style={{ fontSize: '12px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                   Product Design · 2026
                 </p>
               </div>
-              <div style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid #D5D3D0' }}>
+              <div style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid #2A2A2A' }}>
                 <a href="/work/reflexity-ai" style={{
                   fontSize: '13px',
-                  color: '#111111',
+                  color: '#EDEBE8',
                   fontWeight: '500',
                   textDecoration: 'none',
                   display: 'inline-flex',
@@ -149,16 +149,16 @@ export default function About() {
 
           {/* Contact CTA */}
           <div style={{ textAlign: 'center', paddingBottom: '100px' }}>
-            <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#111111', marginBottom: '12px' }}>
+            <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#EDEBE8', marginBottom: '12px' }}>
               If something here felt familiar, let's talk.
             </h2>
-            <p style={{ fontSize: '16px', color: '#666666', marginBottom: '32px' }}>
+            <p style={{ fontSize: '16px', color: '#888888', marginBottom: '32px' }}>
               Freelance, full-time, or just a conversation that goes somewhere: I'm around.
             </p>
             <a href="https://wa.me/8248604075" style={{
               padding: '14px 40px',
-              backgroundColor: '#111111',
-              color: '#FAFAF8',
+              backgroundColor: '#EDEBE8',
+              color: '#111111',
               textDecoration: 'none',
               fontSize: '14px',
               fontWeight: '500',

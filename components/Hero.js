@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="hero-section">
       <p style={{
         fontSize: '13px',
-        color: '#999999',
+        color: '#666666',
         letterSpacing: '0.12em',
         textTransform: 'uppercase',
         marginBottom: '24px',
@@ -19,8 +19,8 @@ export default function Hero() {
       <div className="hero-ctas">
         <a href="#work" style={{
           padding: '14px 32px',
-          backgroundColor: '#111111',
-          color: '#FAFAF8',
+          backgroundColor: '#EDEBE8',
+          color: '#111111',
           textDecoration: 'none',
           fontSize: '14px',
           fontWeight: '500',
@@ -31,12 +31,12 @@ export default function Hero() {
         <a href="/resume.pdf" target="_blank" style={{
           padding: '14px 32px',
           backgroundColor: 'transparent',
-          color: '#111111',
+          color: '#EDEBE8',
           textDecoration: 'none',
           fontSize: '14px',
           fontWeight: '500',
           borderRadius: '4px',
-          border: '1px solid #D5D3D0',
+          border: '1px solid #2A2A2A',
         }}>
           Download Resume
         </a>

@@ -9,18 +9,18 @@ export default function Navbar() {
 
   return (
     <nav className="nav-inner">
-      <Link href="/" style={{ textDecoration: 'none', color: '#111111', fontWeight: '500' }}>
+      <Link href="/" style={{ textDecoration: 'none', color: '#EDEBE8', fontWeight: '500' }}>
         Jerry Melvin
       </Link>
 
       {/* Desktop links */}
       <div className="nav-links">
-        <Link href="/work" style={{ textDecoration: 'none', color: '#666666' }}>Work</Link>
-        <Link href="/about" style={{ textDecoration: 'none', color: '#666666' }}>About</Link>
+        <Link href="/work" style={{ textDecoration: 'none', color: '#888888' }}>Work</Link>
+        <Link href="/about" style={{ textDecoration: 'none', color: '#888888' }}>About</Link>
         <Link href="https://wa.me/8248604075" style={{
           textDecoration: 'none',
-          color: '#FAFAF8',
-          backgroundColor: '#111111',
+          color: '#111111',
+          backgroundColor: '#EDEBE8',
           padding: '10px 20px',
           borderRadius: '100px',
           fontSize: '14px',
@@ -45,8 +45,8 @@ export default function Navbar() {
         <Link href="https://wa.me/8248604075" onClick={() => setOpen(false)} style={{
           fontSize: '18px',
           fontWeight: '500',
-          color: '#FAFAF8',
-          backgroundColor: '#111111',
+          color: '#111111',
+          backgroundColor: '#EDEBE8',
           padding: '14px 32px',
           borderRadius: '100px',
           textDecoration: 'none',

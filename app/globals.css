@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #EDEBE8;
-  color: #111111;
+  background-color: #111111;
+  color: #EDEBE8;
   font-family: sans-serif;
 }
 
@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 24px 48px;
-  border-bottom: 1px solid #D5D3D0;
+  border-bottom: 1px solid #2A2A2A;
   position: relative;
   z-index: 10;
 }
@@ -30,14 +30,14 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  color: #111111;
+  color: #EDEBE8;
   padding: 4px;
 }
 .nav-overlay {
   display: none;
   position: fixed;
   inset: 0;
-  background: #EDEBE8;
+  background: #111111;
   z-index: 40;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,7 @@ body {
 .nav-overlay a {
   font-size: 28px;
   font-weight: 500;
-  color: #111111;
+  color: #EDEBE8;
   text-decoration: none;
 }
 .nav-overlay-close {
@@ -60,7 +60,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  color: #111111;
+  color: #EDEBE8;
 }
 
 /* ─── Hero ───────────────────────────────────────── */
@@ -72,13 +72,13 @@ body {
   align-items: center;
   text-align: center;
   padding: 80px 48px;
-  background: radial-gradient(ellipse at 60% 40%, #e2ddf0 0%, #ebe8e3 40%, #EDEBE8 100%);
+  background: radial-gradient(ellipse at 60% 40%, #1a1530 0%, #161414 40%, #111111 100%);
 }
 .hero-h1 {
   font-size: 72px;
   font-weight: 500;
   line-height: 1.1;
-  color: #111111;
+  color: #EDEBE8;
   max-width: 800px;
   margin-bottom: 48px;
 }
@@ -97,7 +97,7 @@ body {
 .page-section    { padding: 80px 48px; max-width: 900px; }
 .page-section-sm { padding: 0 48px; max-width: 900px; margin: 0 auto 96px; text-align: center; }
 .case-hero       { padding: 80px 48px; max-width: 900px; margin: 0 auto; text-align: center; }
-.divider         { border-top: 1px solid #D5D3D0; margin: 0 48px; }
+.divider         { border-top: 1px solid #2A2A2A; margin: 0 48px; }
 
 /* ─── About page ─────────────────────────────────── */
 .about-container {
@@ -107,18 +107,18 @@ body {
 }
 .about-eyebrow {
   font-size: 13px;
-  color: #999999;
+  color: #666666;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
 .about-section-label {
   font-size: 12px;
-  color: #999999;
+  color: #666666;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding-bottom: 16px;
-  border-bottom: 1px solid #D5D3D0;
+  border-bottom: 1px solid #2A2A2A;
   margin-bottom: 0;
 }
 .about-top-cols {
@@ -129,7 +129,7 @@ body {
   align-items: flex-start;
 }
 .about-info-card {
-  background: #E3E1DE;
+  background: #1A1A1A;
   border-radius: 16px;
   padding: 28px;
   position: sticky;
@@ -138,7 +138,7 @@ body {
 .about-info-row {
   padding-bottom: 18px;
   margin-bottom: 18px;
-  border-bottom: 1px solid #D5D3D0;
+  border-bottom: 1px solid #2A2A2A;
 }
 .about-info-row:last-child {
   padding-bottom: 0;
@@ -150,7 +150,7 @@ body {
   grid-template-columns: 148px 1fr;
   gap: 32px;
   padding: 20px 0;
-  border-top: 1px solid #D5D3D0;
+  border-top: 1px solid #2A2A2A;
   align-items: flex-start;
 }
 .about-bottom-cards {
@@ -160,13 +160,13 @@ body {
   margin-bottom: 80px;
 }
 .about-card {
-  background: #E3E1DE;
+  background: #1A1A1A;
   border-radius: 16px;
   padding: 28px 28px 32px;
 }
 .about-card-job {
   padding: 14px 0;
-  border-bottom: 1px solid #D5D3D0;
+  border-bottom: 1px solid #2A2A2A;
 }
 .about-card-job:last-child {
   border-bottom: none;
@@ -179,9 +179,10 @@ body {
 
 /* ─── Cards ──────────────────────────────────────── */
 .card-wrap {
-  background: #E3E1DE;
+  background: #FFFFFF;
   border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
 }
 .card-img {
   width: 100%;
@@ -194,14 +195,14 @@ body {
 }
 
 /* ─── Typography ─────────────────────────────────── */
-.about-h1 { font-size: 52px; font-weight: 500; line-height: 1.15; color: #111111; margin-bottom: 28px; }
-.case-h1  { font-size: 56px; font-weight: 500; color: #111111; margin-bottom: 24px; line-height: 1.1; }
-.work-h1  { font-size: 48px; font-weight: 500; color: #111111; line-height: 1.15; max-width: 600px; margin-bottom: 80px; }
+.about-h1 { font-size: 52px; font-weight: 500; line-height: 1.15; color: #EDEBE8; margin-bottom: 28px; }
+.case-h1  { font-size: 56px; font-weight: 500; color: #EDEBE8; margin-bottom: 24px; line-height: 1.1; }
+.work-h1  { font-size: 48px; font-weight: 500; color: #EDEBE8; line-height: 1.15; max-width: 600px; margin-bottom: 80px; }
 
 /* ─── Footer ─────────────────────────────────────── */
 .footer-inner {
   padding: 48px;
-  background: #111111;
+  background: #0A0A0A;
   display: flex;
   justify-content: space-between;
   align-items: center;
