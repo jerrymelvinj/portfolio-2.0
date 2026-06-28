@@ -1,13 +1,6 @@
 export default function Footer() {
   return (
-    <footer style={{
-      padding: '48px',
-      borderTop: '1px solid #E7E7E7',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      marginTop: '96px'
-    }}>
+    <footer className="footer-inner">
       <p style={{ fontSize: '14px', color: '#666666' }}>
         © 2026 Jerry Melvin
       </p>

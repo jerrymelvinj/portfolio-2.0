@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 
 export default function WorkSection() {
   return (
-    <section id="work" style={{ padding: '96px 48px' }}>
+    <section id="work" className="work-section">
       <p style={{
         fontSize: '12px',
         color: '#666666',
@@ -13,11 +13,7 @@ export default function WorkSection() {
       }}>
         Selected Work
       </p>
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(2, 1fr)',
-        gap: '24px',
-      }}>
+      <div className="grid-2">
         {projects.map((project, index) => (
           <ProjectCard key={project.slug} project={project} index={index} />
         ))}

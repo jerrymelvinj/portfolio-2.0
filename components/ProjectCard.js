@@ -72,15 +72,9 @@ export default function ProjectCard({ project, index }) {
           <div
             ref={imageRef}
             onMouseMove={handleMouseMove}
-            style={{
-              width: '100%',
-              height: '360px',
-              backgroundColor: project.placeholderColor || '#E7E7E7',
-              borderRadius: '12px',
-              position: 'relative',
-              overflow: 'hidden',
-              marginBottom: '20px',
-            }}>
+            className="card-img"
+            style={{ backgroundColor: project.placeholderColor || '#E7E7E7' }}
+          >
             <div style={{
               position: 'absolute',
               inset: 0,

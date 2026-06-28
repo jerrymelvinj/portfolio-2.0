@@ -8,8 +8,7 @@ export default function Work() {
     <>
       <main>
         <Navbar />
-
-        <section style={{ padding: '80px 48px 48px' }}>
+        <section className="work-section">
           <p style={{
             fontSize: '13px',
             color: '#666666',
@@ -19,22 +18,10 @@ export default function Work() {
           }}>
             Work
           </p>
-          <h1 style={{
-            fontSize: '48px',
-            fontWeight: '500',
-            color: '#111111',
-            lineHeight: '1.15',
-            maxWidth: '600px',
-            marginBottom: '80px',
-          }}>
+          <h1 className="work-h1">
             Selected projects
           </h1>
-
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
-            gap: '24px',
-          }}>
+          <div className="grid-2">
             {projects.map((project, index) => (
               <ProjectCard key={project.slug} project={project} index={index} />
             ))}

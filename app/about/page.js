@@ -8,10 +8,7 @@ export default function About() {
           <Navbar />
 
           {/* Hero */}
-          <section style={{
-              padding: '120px 48px 80px',
-              maxWidth: '900px',
-          }}>
+          <section className="about-hero">
               <p style={{
                   fontSize: '13px',
                   color: '#666666',
@@ -21,14 +18,7 @@ export default function About() {
               }}>
                   About
               </p>
-              <h1 style={{
-                  fontSize: '56px',
-                  fontWeight: '500',
-                  lineHeight: '1.15',
-                  color: '#111111',
-                  maxWidth: '700px',
-                  marginBottom: '32px',
-              }}>
+              <h1 className="about-h1">
                   Designer who thinks in systems and feels in details.
               </h1>
               <p style={{
@@ -41,54 +31,29 @@ export default function About() {
               </p>
           </section>
 
-          {/* Divider */}
-          <div style={{ borderTop: '1px solid #E7E7E7', margin: '0 48px' }} />
+          <div className="divider" />
 
           {/* Bio */}
-          <section style={{ padding: '80px 48px', maxWidth: '900px' }}>
-              <p style={{
-                  fontSize: '18px',
-                  color: '#444444',
-                  lineHeight: '1.8',
-                  maxWidth: '640px',
-                  marginBottom: '24px',
-              }}>
+          <section className="page-section">
+              <p style={{ fontSize: '18px', color: '#444444', lineHeight: '1.8', maxWidth: '640px', marginBottom: '24px' }}>
                   I started in UI/UX with a focus on design systems — learning how to build consistency at scale before learning how to break it intentionally. Over time I moved toward full-stack product work: designing, building, and shipping end-to-end.
               </p>
-              <p style={{
-                  fontSize: '18px',
-                  color: '#444444',
-                  lineHeight: '1.8',
-                  maxWidth: '640px',
-                  marginBottom: '24px',
-              }}>
+              <p style={{ fontSize: '18px', color: '#444444', lineHeight: '1.8', maxWidth: '640px', marginBottom: '24px' }}>
                   Outside of client work, I'm building ReflexityAI — an AI-powered platform for automating personalised client communication. It's where I test every idea I'm not yet ready to sell.
               </p>
-              <p style={{
-                  fontSize: '18px',
-                  color: '#444444',
-                  lineHeight: '1.8',
-                  maxWidth: '640px',
-              }}>
+              <p style={{ fontSize: '18px', color: '#444444', lineHeight: '1.8', maxWidth: '640px' }}>
                   I also write — journal-style prose, stream-of-consciousness vignettes, things that don't have a brief. Writing keeps my design thinking honest.
               </p>
           </section>
 
-          {/* Divider */}
-          <div style={{ borderTop: '1px solid #E7E7E7', margin: '0 48px' }} />
+          <div className="divider" />
 
           {/* Skills */}
-          <section style={{ padding: '80px 48px', maxWidth: '900px' }}>
-              <p style={{
-                  fontSize: '12px',
-                  color: '#666666',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em',
-                  marginBottom: '48px',
-              }}>
+          <section className="page-section">
+              <p style={{ fontSize: '12px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '48px' }}>
                   Skills
               </p>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '48px' }}>
+              <div className="grid-3">
                   <div>
                       <p style={{ fontSize: '13px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Design</p>
                       {['Figma', 'Adobe XD', 'Adobe Photoshop', 'Adobe Illustrator', 'Prototyping', 'Visual Design'].map(skill => (
@@ -110,18 +75,11 @@ export default function About() {
               </div>
           </section>
 
-          {/* Divider */}
-          <div style={{ borderTop: '1px solid #E7E7E7', margin: '0 48px' }} />
+          <div className="divider" />
 
           {/* Experience */}
-          <section style={{ padding: '80px 48px', maxWidth: '900px' }}>
-              <p style={{
-                  fontSize: '12px',
-                  color: '#666666',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em',
-                  marginBottom: '48px',
-              }}>
+          <section className="page-section">
+              <p style={{ fontSize: '12px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '48px' }}>
                   Experience
               </p>
               {[
@@ -144,12 +102,7 @@ export default function About() {
                       description: 'Mentored students on design principles and tools as part of the government\'s Kalike Jothege Kaushalya initiative. Translated complex design concepts into accessible lessons.',
                   },
               ].map((job) => (
-                  <div key={job.role} style={{
-                      display: 'grid',
-                      gridTemplateColumns: '200px 1fr',
-                      gap: '32px',
-                      marginBottom: '56px',
-                  }}>
+                  <div key={job.role} className="exp-row">
                       <div>
                           <p style={{ fontSize: '14px', color: '#666666' }}>{job.period}</p>
                       </div>
@@ -162,33 +115,17 @@ export default function About() {
               ))}
           </section>
 
-          {/* Divider */}
-          <div style={{ borderTop: '1px solid #E7E7E7', margin: '0 48px' }} />
+          <div className="divider" />
 
           {/* Contact CTA */}
-          <section style={{
-              padding: '96px 48px',
-              textAlign: 'center',
-          }}>
-              <h2 style={{
-                  fontSize: '40px',
-                  fontWeight: '500',
-                  color: '#111111',
-                  marginBottom: '16px',
-              }}>
+          <section className="page-section" style={{ textAlign: 'center' }}>
+              <h2 style={{ fontSize: '40px', fontWeight: '500', color: '#111111', marginBottom: '16px' }}>
                   Let's work together
               </h2>
-              <p style={{
-                  fontSize: '18px',
-                  color: '#666666',
-                  marginBottom: '40px',
-              }}>
+              <p style={{ fontSize: '18px', color: '#666666', marginBottom: '40px' }}>
                   Open to freelance projects, full-time roles, and interesting conversations.
               </p>
-
-              <a
-              href="mailto:jerry@jerrymelvinj.com"
-              style={{
+              <a href="mailto:jerry@jerrymelvinj.com" style={{
                   padding: '14px 40px',
                   backgroundColor: '#111111',
                   color: '#FAFAF8',
@@ -196,11 +133,11 @@ export default function About() {
                   fontSize: '14px',
                   fontWeight: '500',
                   borderRadius: '4px',
-              }}
-              >
-              Get in touch
-          </a>
-      </section>
+                  display: 'inline-block',
+              }}>
+                  Get in touch
+              </a>
+          </section>
     </main>
     <Footer />
     </>
