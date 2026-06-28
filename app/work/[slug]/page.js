@@ -1,10 +1,17 @@
+import Link from 'next/link'
 import { projects } from '../../../content/projects'
 import Navbar from '../../../components/Navbar'
 import Footer from '../../../components/Footer'
+import ProjectCard from '../../../components/ProjectCard'
 
 export default async function CaseStudy({ params }) {
   const { slug } = await params
   const project = projects.find((p) => p.slug === slug)
+  const currentIndex = projects.findIndex((p) => p.slug === slug)
+  const nextProjects = [
+    projects[(currentIndex + 1) % projects.length],
+    projects[(currentIndex + 2) % projects.length],
+  ]
 
   if (!project) {
     return <h1>Project not found</h1>
@@ -13,6 +20,13 @@ export default async function CaseStudy({ params }) {
   return (
     <main>
       <Navbar />
+
+      {/* Back */}
+      <div style={{ padding: '24px 48px 0' }}>
+        <Link href="/" style={{ fontSize: '14px', color: '#666666', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+          ← Back
+        </Link>
+      </div>
 
       {/* Hero */}
       <section style={{ padding: '80px 48px', maxWidth: '900px' }}>
@@ -106,6 +120,25 @@ export default async function CaseStudy({ params }) {
         <p style={{ fontSize: '18px', color: '#666666', lineHeight: '1.7', maxWidth: '680px' }}>
           Placeholder — what would you do differently? What did this project teach you about design, users, or collaboration? What are the next steps?
         </p>
+      </section>
+
+      {/* Next Up */}
+      <section style={{ padding: '0 48px 96px' }}>
+        <div style={{ borderTop: '1px solid #E7E7E7', paddingTop: '64px', marginBottom: '48px' }}>
+          <p style={{
+            fontSize: '12px',
+            color: '#666666',
+            textTransform: 'uppercase',
+            letterSpacing: '0.15em',
+          }}>
+            Next Up
+          </p>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '24px' }}>
+          {nextProjects.map((p, i) => (
+            <ProjectCard key={p.slug} project={p} index={i} />
+          ))}
+        </div>
       </section>
 
       <Footer />

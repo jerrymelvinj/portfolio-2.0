@@ -3,7 +3,8 @@ import Footer from '../../components/Footer'
 
 export default function About() {
   return (
-    <><main>
+    <>
+    <main>
           <Navbar />
 
           {/* Hero */}
@@ -90,19 +91,19 @@ export default function About() {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '48px' }}>
                   <div>
                       <p style={{ fontSize: '13px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Design</p>
-                      {['Product Design', 'UX Research', 'Design Systems', 'Figma', 'Prototyping', 'Visual Design'].map(skill => (
+                      {['Figma', 'Adobe XD', 'Adobe Photoshop', 'Adobe Illustrator', 'Prototyping', 'Visual Design'].map(skill => (
                           <p key={skill} style={{ fontSize: '16px', color: '#111111', marginBottom: '10px' }}>{skill}</p>
                       ))}
                   </div>
                   <div>
-                      <p style={{ fontSize: '13px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Development</p>
-                      {['Next.js', 'React', 'Tailwind CSS', 'HTML & CSS', 'Flutter', 'Framer'].map(skill => (
+                      <p style={{ fontSize: '13px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>UX Research</p>
+                      {['User Interviews', 'Usability Testing', 'Information Architecture', 'User Flows', 'Wireframing', 'Data Visualization'].map(skill => (
                           <p key={skill} style={{ fontSize: '16px', color: '#111111', marginBottom: '10px' }}>{skill}</p>
                       ))}
                   </div>
                   <div>
-                      <p style={{ fontSize: '13px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Tools</p>
-                      {['Tokens Studio', 'Webflow', 'Framer', 'VS Code', 'DaVinci Resolve', 'Notion'].map(skill => (
+                      <p style={{ fontSize: '13px', color: '#666666', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Collaboration</p>
+                      {['Design Systems', 'Agile / Scrum', 'Developer Handoff', 'Stakeholder Management', 'UX Writing', 'Storytelling'].map(skill => (
                           <p key={skill} style={{ fontSize: '16px', color: '#111111', marginBottom: '10px' }}>{skill}</p>
                       ))}
                   </div>
@@ -125,16 +126,22 @@ export default function About() {
               </p>
               {[
                   {
-                      role: 'Freelance Product Designer & Developer',
-                      company: 'Independent',
-                      period: '2023 — Present',
-                      description: 'Working across UI/UX design and frontend development for clients including Eden & Blooms, a nail art studio in Bengaluru, and building ReflexityAI as a solo product.',
+                      role: 'Product Designer (UI/UX)',
+                      company: 'AKOI Marketing Hub Pvt. Ltd.',
+                      period: 'Jul 2024 — Present',
+                      description: 'Leading UI/UX for an internal SaaS reporting tool and high-conversion D2C landing pages. Established a scalable design system using Figma variables and components. Drove a 30% increase in marketplace sales through optimised layout and clear calls-to-action.',
                   },
                   {
                       role: 'UI/UX Designer',
-                      company: 'Previous Employer',
-                      period: '2022 — 2023',
-                      description: 'Worked on SaaS tools and web products, building design systems from scratch and establishing component architecture using Figma and Tokens Studio.',
+                      company: 'Griticon Technologies Pvt. Ltd.',
+                      period: 'Dec 2024 — Feb 2025',
+                      description: 'Freelance engagement. Designed responsive, minimal-themed interfaces for mobile and tablet apps, adhering to iOS and Material Design guidelines. Created interactive prototypes to validate user flows before development.',
+                  },
+                  {
+                      role: 'Graphic Design Trainer',
+                      company: 'Academy of Media and Design',
+                      period: 'May 2024 — Jul 2024',
+                      description: 'Mentored students on design principles and tools as part of the government\'s Kalike Jothege Kaushalya initiative. Translated complex design concepts into accessible lessons.',
                   },
               ].map((job) => (
                   <div key={job.role} style={{
@@ -179,6 +186,7 @@ export default function About() {
                   Open to freelance projects, full-time roles, and interesting conversations.
               </p>
 
+              <a
               href="mailto:jerry@jerrymelvinj.com"
               style={{
                   padding: '14px 40px',
@@ -189,10 +197,12 @@ export default function About() {
                   fontWeight: '500',
                   borderRadius: '4px',
               }}
-              {'>'}
+              >
               Get in touch
           </a>
-      </section><Footer /></>
+      </section>
     </main>
+    <Footer />
+    </>
   )
 }

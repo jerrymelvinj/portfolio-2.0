@@ -7,6 +7,7 @@ export const projects = [
     role: 'Solo Designer & Developer',
     year: '2026',
     placeholderColor: '#1a1a2e',
+    tags: ['Product Design', 'AI', '2026'],
   },
   {
     slug: 'eden-and-blooms',
@@ -16,6 +17,7 @@ export const projects = [
     role: 'Freelance Designer',
     year: '2026',
     placeholderColor: '#1c2b1e',
+    tags: ['Web Design', 'Branding', '2026'],
   },
   {
     slug: 'nail-art-studio',
@@ -25,5 +27,6 @@ export const projects = [
     role: 'Freelance Designer',
     year: '2026',
     placeholderColor: '#2b1c2b',
+    tags: ['Web Design', 'Freelance', '2026'],
   },
 ]

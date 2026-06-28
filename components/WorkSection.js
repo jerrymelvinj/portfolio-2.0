@@ -1,6 +1,5 @@
 import { projects } from '../content/projects'
 import ProjectCard from './ProjectCard'
-import ScrollStack, { ScrollStackItem } from './ScrollStack'
 
 export default function WorkSection() {
   return (
@@ -14,13 +13,15 @@ export default function WorkSection() {
       }}>
         Selected Work
       </p>
-      <ScrollStack>
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(2, 1fr)',
+        gap: '24px',
+      }}>
         {projects.map((project, index) => (
-          <ScrollStackItem key={project.slug}>
-            <ProjectCard project={project} index={index} />
-          </ScrollStackItem>
+          <ProjectCard key={project.slug} project={project} index={index} />
         ))}
-      </ScrollStack>
+      </div>
     </section>
   )
 }

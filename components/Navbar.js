@@ -12,10 +12,20 @@ export default function Navbar() {
       <Link href="/" style={{ textDecoration: 'none', color: '#111111', fontWeight: '500' }}>
         Jerry Melvin
       </Link>
-      <div style={{ display: 'flex', gap: '32px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
         <Link href="/work" style={{ textDecoration: 'none', color: '#666666' }}>Work</Link>
         <Link href="/about" style={{ textDecoration: 'none', color: '#666666' }}>About</Link>
-        <Link href="/contact" style={{ textDecoration: 'none', color: '#666666' }}>Contact</Link>
+        <Link href="https://wa.me/8248604075" style={{
+          textDecoration: 'none',
+          color: '#FAFAF8',
+          backgroundColor: '#111111',
+          padding: '10px 20px',
+          borderRadius: '100px',
+          fontSize: '14px',
+          fontWeight: '500',
+        }}>
+          Get in Touch
+        </Link>
       </div>
     </nav>
   )
