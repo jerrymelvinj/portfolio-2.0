@@ -190,6 +190,12 @@ body {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07), 0 0 0 1px rgba(0,0,0,0.05);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  will-change: transform;
+}
+.card-wrap:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(67, 97, 238, 0.14), 0 4px 16px rgba(0,0,0,0.08);
 }
 .card-img {
   width: 100%;
@@ -197,14 +203,49 @@ body {
   position: relative;
   overflow: hidden;
 }
+.card-media {
+  transition: transform 0.5s ease !important;
+}
+.card-wrap:hover .card-media {
+  transform: scale(1.05) !important;
+}
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(67, 97, 238, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+.card-wrap:hover .card-overlay {
+  opacity: 1;
+}
+.card-view-btn {
+  background: #FFFFFF;
+  color: #4361EE;
+  padding: 10px 22px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transform: translateY(10px);
+  transition: transform 0.35s ease;
+  white-space: nowrap;
+}
+.card-wrap:hover .card-view-btn {
+  transform: translateY(0);
+}
 .card-content {
-  padding: 16px 20px 20px;
+  padding: 18px 20px 22px;
 }
 
 /* ─── Typography ─────────────────────────────────── */
 .about-h1 { font-size: 52px; font-weight: 700; line-height: 1.1; color: #111111; margin-bottom: 28px; letter-spacing: -0.02em; }
 .case-h1  { font-size: 56px; font-weight: 700; color: #111111; margin-bottom: 24px; line-height: 1.08; letter-spacing: -0.02em; }
-.work-h1  { font-size: 48px; font-weight: 700; color: #111111; line-height: 1.1; max-width: 600px; margin-bottom: 80px; letter-spacing: -0.02em; }
+.work-h1  { font-size: 48px; font-weight: 700; color: #111111; line-height: 1.1; max-width: 600px; margin: 0 auto 80px; text-align: center; letter-spacing: -0.02em; }
 
 /* ─── Footer ─────────────────────────────────────── */
 .footer-inner {

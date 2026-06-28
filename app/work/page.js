@@ -10,11 +10,13 @@ export default function Work() {
         <Navbar />
         <section className="work-section">
           <p style={{
-            fontSize: '13px',
-            color: '#999999',
+            fontSize: '12px',
+            color: '#4361EE',
             letterSpacing: '0.12em',
             textTransform: 'uppercase',
             marginBottom: '16px',
+            textAlign: 'center',
+            fontWeight: '600',
           }}>
             Work
           </p>
