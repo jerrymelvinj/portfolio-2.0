@@ -6,6 +6,7 @@ export const projects = [
     description: 'An AI-powered platform designed to automate and personalise client communication.',
     role: 'Solo Designer & Developer',
     year: '2026',
+    placeholderColor: '#1a1a2e',
   },
   {
     slug: 'eden-and-blooms',
@@ -14,6 +15,7 @@ export const projects = [
     description: 'A dark luxury website for a balloon décor and celebrations studio.',
     role: 'Freelance Designer',
     year: '2026',
+    placeholderColor: '#1c2b1e',
   },
   {
     slug: 'nail-art-studio',
@@ -22,5 +24,6 @@ export const projects = [
     description: 'Portfolio-first website for a nail art studio in BTM Layout, Bengaluru.',
     role: 'Freelance Designer',
     year: '2026',
+    placeholderColor: '#2b1c2b',
   },
 ]
