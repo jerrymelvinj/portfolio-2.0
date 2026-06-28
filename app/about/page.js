@@ -43,16 +43,13 @@ export default function About() {
             <div>
               <p className="about-eyebrow">About me</p>
               <h1 className="about-h1">
-                Designer who thinks in systems and feels in details.
+                Someone who feels first, then designs.
               </h1>
               <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.8', marginBottom: '20px' }}>
-                I'm Jerry Melvin — a product designer and frontend developer based in Bengaluru. I work at the intersection of UX thinking, visual craft, and frontend code. I care about products that are both well-reasoned and well-felt.
+                I'm Jerry Melvin. A product designer and frontend developer based in Bengaluru. I don't always know where a design is going when I start — but somewhere in the middle, it finds its shape. That's the part I live for.
               </p>
               <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.8', marginBottom: '20px' }}>
-                I started in UI/UX with a focus on design systems — learning how to build consistency at scale before learning how to break it intentionally. Over time I moved toward full-stack product work: designing, building, and shipping end-to-end.
-              </p>
-              <p style={{ fontSize: '18px', color: '#555555', lineHeight: '1.8' }}>
-                Outside of client work, I'm building ReflexityAI — an AI-powered platform for automating personalised client communication. It's where I test every idea I'm not yet ready to sell.
+                I got into UI/UX quietly, without a grand plan. Learned design systems first — the boring but necessary kind — then slowly started understanding when to break them. Over time, I found myself designing and building together, not separately. One fed the other.
               </p>
             </div>
 
@@ -76,7 +73,7 @@ export default function About() {
               </div>
               <div className="about-info-row">
                 <p style={{ fontSize: '11px', color: '#999999', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '5px' }}>Currently building</p>
-                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>ReflexityAI</p>
+                <p style={{ fontSize: '15px', color: '#111111', fontWeight: '500' }}>-</p>
               </div>
             </div>
 
@@ -157,10 +154,10 @@ export default function About() {
           {/* Contact CTA */}
           <div style={{ textAlign: 'center', paddingBottom: '100px' }}>
             <h2 style={{ fontSize: '36px', fontWeight: '500', color: '#111111', marginBottom: '12px' }}>
-              Let's work together
+              If something here felt familiar, let's talk.
             </h2>
             <p style={{ fontSize: '16px', color: '#666666', marginBottom: '32px' }}>
-              Open to freelance projects, full-time roles, and interesting conversations.
+              Freelance, full-time, or just a conversation that goes somewhere — I'm around.
             </p>
             <a href="https://wa.me/8248604075" style={{
               padding: '14px 40px',

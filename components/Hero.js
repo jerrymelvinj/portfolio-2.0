@@ -8,10 +8,10 @@ export default function Hero() {
         textTransform: 'uppercase',
         marginBottom: '24px',
       }}>
-        Product Designer & Frontend Developer
+        Product Designer & Creative Developer
       </p>
       <h1 className="hero-h1">
-        Designing products that{' '}
+       Designing things that quietly {' '}
         <em className="hero-serif">think</em>,{' '}
         <em className="hero-serif">feel</em>, and{' '}
         <em className="hero-serif">scale</em>.
