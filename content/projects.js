@@ -48,28 +48,28 @@ export const projects = [
     tags: ['Web Design', 'Branding', '2025'],
     sections: [
       {
-        heading: 'Nobody sees the designer.',
-        body: ' That's how you know it worked.',
+        heading: 'Nobody sees the designer',
+        body: 'That's how you know it worked.',
       },
        {
         label: 'The role',
-        body: 'When I joined AKOI as an in-house UI/UX designer, one of my responsibilities was something most designers don't talk about — building the company's own portfolio pages. The work that shows the work. It sounds simple. It's not.',
+        body: "When I joined AKOI as an in-house UI/UX designer, one of my responsibilities was something most designers don't talk about — building the company's own portfolio pages. The work that shows the work. It sounds simple. It's not.",
       },
       {
         heading: 'What I was actually doing',
-        body: 'For every client AKOI served — Omron, AliveCor, Syska, Duroflex, InYou, Venus Remedies — I had to take the results, the strategy, the numbers, and turn them into something a stranger could land on and immediately understand. Not just understand. Feel the weight of. A 42% market share on Amazon. A #1 Google ranking for blood pressure monitors. 6.3 million impressions on Facebook for a pharma brand. 40,000 followers. A sofa set ranking #9 nationally in one month. These are real things that happened. My job was to make sure they didn't just sit in a spreadsheet.',
+        body: "For every client AKOI served — Omron, AliveCor, Syska, Duroflex, InYou, Venus Remedies — I had to take the results, the strategy, the numbers, and turn them into something a stranger could land on and immediately understand. Not just understand. Feel the weight of. A 42% market share on Amazon. A #1 Google ranking for blood pressure monitors. 6.3 million impressions on Facebook for a pharma brand. 40,000 followers. A sofa set ranking #9 nationally in one month. These are real things that happened. My job was to make sure they didn't just sit in a spreadsheet.'",
       },
       {
         heading: 'What the work looked like',
-        body: 'Each portfolio page was different because each brand was different. AliveCor needed clinical credibility. InYou needed something warmer, more personal — a wellness brand that didn't want to feel like a wellness brand. Syska needed clarity across a wide product range. Duroflex needed the SEO story told in a way that didn't bore people to death. I designed the layouts, organised the information hierarchy, decided what to lead with — the number, the context, the visual. Some pages had video assets. Some had listing images. Some had competitor maps and keyword charts. None of them were templated. Each one started from what that brand actually did.',
+        body: "Each portfolio page was different because each brand was different. AliveCor needed clinical credibility. InYou needed something warmer, more personal — a wellness brand that didn't want to feel like a wellness brand. Syska needed clarity across a wide product range. Duroflex needed the SEO story told in a way that didn't bore people to death. I designed the layouts, organised the information hierarchy, decided what to lead with — the number, the context, the visual. Some pages had video assets. Some had listing images. Some had competitor maps and keyword charts. None of them were templated. Each one started from what that brand actually did.",
       },
       {
         heading: 'What I learned quietly',
-        body: 'You spend a lot of time on work that makes other people's work look good. There's something almost invisible about it. But I think that's the job sometimes — to hold the story together without becoming the story yourself. I got better at reading data and deciding what matters. I got better at knowing when a number needs context and when it speaks for itself. I got better at designing pages that don't make the reader work too hard. These portfolio pages are still live. People make decisions about hiring AKOI based on them. That's a strange kind of responsibility — and one I didn't take lightly.',
+        body: "You spend a lot of time on work that makes other people's work look good. There's something almost invisible about it. But I think that's the job sometimes — to hold the story together without becoming the story yourself. I got better at reading data and deciding what matters. I got better at knowing when a number needs context and when it speaks for itself. I got better at designing pages that don't make the reader work too hard. These portfolio pages are still live. People make decisions about hiring AKOI based on them. That's a strange kind of responsibility — and one I didn't take lightly.",
       },
       {
         label: 'Brands',
-        heading: 'Omron Healthcare · AliveCor · Syska LED · InYou Wellness · Duroflex · Venus Remedies · Access Agro Biotech',
+        heading: "Omron Healthcare · AliveCor · Syska LED · InYou Wellness · Duroflex · Venus Remedies · Access Agro Biotech", 
       },
     ],
   },
