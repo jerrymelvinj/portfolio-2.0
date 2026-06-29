@@ -5,7 +5,7 @@ import Footer from '../../../components/Footer'
 import ProjectCard from '../../../components/ProjectCard'
 
 export default async function CaseStudy({ params }) {
-  const slug = params.slug
+  const { slug } = await params  // ← must await in Next.js 15
   const project = projects.find((p) => p.slug === slug)
   const currentIndex = projects.findIndex((p) => p.slug === slug)
   const nextProjects = [
