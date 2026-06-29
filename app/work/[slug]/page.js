@@ -14,8 +14,14 @@ export default async function CaseStudy({ params }) {
   ]
 
   if (!project) {
-    return <h1>Project not found</h1>
-  }
+  return (
+    <div>
+      <h1>Project not found</h1>
+      <p>Slug received: "{slug}"</p>
+      <p>Available slugs: {projects.map(p => p.slug).join(', ')}</p>
+    </div>
+  )
+}
 
   return (
     <main>
