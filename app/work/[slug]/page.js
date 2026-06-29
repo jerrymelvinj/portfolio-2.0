@@ -5,7 +5,7 @@ import Footer from '../../../components/Footer'
 import ProjectCard from '../../../components/ProjectCard'
 
 export default async function CaseStudy({ params }) {
-  const { slug } = await params
+  const slug = params.slug
   const project = projects.find((p) => p.slug === slug)
   const currentIndex = projects.findIndex((p) => p.slug === slug)
   const nextProjects = [
@@ -51,7 +51,11 @@ export default async function CaseStudy({ params }) {
 
       {/* Cover placeholder */}
       <section className="page-section-sm">
-        <div style={{ width: '100%', height: '560px', backgroundColor: '#F0F0EE', borderRadius: '8px' }} />
+        {project.media && project.media.type === 'video' ? (
+          <video src={project.media.src} style={{ width: '100%', maxWidth: '900px', borderRadius: '8px', margin: '0 auto' }} autoPlay muted loop playsInline />
+        ) : (
+          <img src={project.media?.src || `/${project.slug}.jpg`} alt={`${project.title} cover`} style={{ width: '100%', maxWidth: '900px', borderRadius: '8px', margin: '0 auto' }} />
+        )}
       </section>
 
       {/* Dynamic sections — edit content in content/projects.js */}
