@@ -48,8 +48,9 @@ export const projects = [
     tags: ['Web Design', 'Branding', '2025'],
     sections: [
       {
+        
         heading: 'Nobody sees the designer',
-        body: 'That's how you know it worked.',
+        body: "That's how you know it worked.",
       },
        {
         label: 'The role',
@@ -57,7 +58,7 @@ export const projects = [
       },
       {
         heading: 'What I was actually doing',
-        body: "For every client AKOI served — Omron, AliveCor, Syska, Duroflex, InYou, Venus Remedies — I had to take the results, the strategy, the numbers, and turn them into something a stranger could land on and immediately understand. Not just understand. Feel the weight of. A 42% market share on Amazon. A #1 Google ranking for blood pressure monitors. 6.3 million impressions on Facebook for a pharma brand. 40,000 followers. A sofa set ranking #9 nationally in one month. These are real things that happened. My job was to make sure they didn't just sit in a spreadsheet.'",
+        body: "For every client AKOI served — Omron, AliveCor, Syska, Duroflex, InYou, Venus Remedies — I had to take the results, the strategy, the numbers, and turn them into something a stranger could land on and immediately understand. Not just understand. Feel the weight of. A 42% market share on Amazon. A #1 Google ranking for blood pressure monitors. 6.3 million impressions on Facebook for a pharma brand. 40,000 followers. A sofa set ranking #9 nationally in one month. These are real things that happened. My job was to make sure they didn't just sit in a spreadsheet.",
       },
       {
         heading: 'What the work looked like',
@@ -91,7 +92,7 @@ export const projects = [
       {
         label: '02 — Research',
         heading: 'Understanding the user',
-        body: 'Write your research findings here. What did you discover about the users and their needs?',
+        body: 'Write you  r research findings here. What did you discover about the users and their needs?',
       },
       {
         label: '03 — Design Process',
